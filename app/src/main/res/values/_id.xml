@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <item name="back" type="id">false</item>
+    <item name="phonenumber" type="id">false</item>
+    <item name="user_agreement" type="id">false</item>
+
+</resources>

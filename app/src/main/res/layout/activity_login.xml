@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/butterfly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/butterfly" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butterfly"
+        android:layout_marginLeft="@dimen/name_margin_left"
+        android:layout_marginRight="@dimen/name_margin_left"
+        android:layout_marginTop="@dimen/name_margin_top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/name_margin_small"
+            android:src="@mipmap/number" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/butterfly"
+            android:layout_marginLeft="@dimen/name_margin_small"
+            android:hint="@string/phonenumber"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/name_margin_left"
+        android:layout_marginRight="@dimen/name_margin_left"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butterfly"
+        android:layout_marginLeft="@dimen/name_margin_left"
+        android:layout_marginRight="@dimen/name_margin_left"
+        android:layout_marginTop="@dimen/name_margin_small"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/name_margin_small"
+            android:src="@mipmap/password" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/butterfly"
+            android:layout_marginLeft="@dimen/name_margin_small"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/name_margin_left"
+        android:layout_marginRight="@dimen/name_margin_left"
+        android:background="@color/black" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/name_margin_left"
+        android:layout_marginRight="@dimen/name_margin_left"
+        android:layout_marginTop="@dimen/name_margin_small"
+        android:hint="@string/login_hint" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/name_margin_left"
+        android:layout_marginRight="@dimen/name_margin_left"
+        android:layout_marginTop="@dimen/tab_top_fontsize"
+        android:background="@color/darklogin"
+        android:text="@string/login"
+        android:textColor="@color/white" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/name_margin_top"
+        android:background="@color/transparent"
+        android:text="@string/forget_password" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/name_margin_left"
+        android:src="@mipmap/green_town" />
+
+
+    <Button
+        android:layout_width="@dimen/button_top"
+        android:layout_height="@dimen/name_margin_left"
+        android:layout_marginTop="@dimen/name_margin_left"
+        android:background="@color/transparent"
+        android:text="@string/register"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+        android:id="@+id/button" />
+
+
+</LinearLayout>
