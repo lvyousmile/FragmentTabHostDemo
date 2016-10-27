@@ -86,6 +86,26 @@ public class GuideActivity extends BaseActivity implements OnPageChangeListener 
 
 	}
 
+	@Override
+	protected void initCreate() {
+
+	}
+
+	@Override
+	protected void initView() {
+
+	}
+
+	@Override
+	protected void initListener() {
+
+	}
+
+	@Override
+	protected void initData() {
+
+	}
+
 	/**
 	 * 
 	 * @author xiaanming

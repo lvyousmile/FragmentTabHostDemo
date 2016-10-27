@@ -13,7 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.TextView;
 
+import com.xiaoge.fragmenttabhostdemo.activity.BaseActivity;
 import com.xiaoge.fragmenttabhostdemo.activity.GuideActivity;
+import com.xiaoge.fragmenttabhostdemo.activity.LoginActivity;
 import com.xiaoge.fragmenttabhostdemo.bean.Tab;
 import com.xiaoge.fragmenttabhostdemo.fragment.DateFragment;
 import com.xiaoge.fragmenttabhostdemo.fragment.PhoneFragment;
@@ -21,6 +23,7 @@ import com.xiaoge.fragmenttabhostdemo.fragment.HomeFragment;
 import com.xiaoge.fragmenttabhostdemo.fragment.ServiceFragment;
 import com.xiaoge.fragmenttabhostdemo.fragment.MineFragment;
 import com.xiaoge.fragmenttabhostdemo.global.AppConstants;
+import com.xiaoge.fragmenttabhostdemo.utils.GlobalConfig;
 import com.xiaoge.fragmenttabhostdemo.utils.SpUtils;
 import com.xiaoge.fragmenttabhostdemo.widget.FragmentTabHost;
 
@@ -49,12 +52,19 @@ public class MainActivity extends AppCompatActivity {
             finish();
             return;
         }
+        //判断是否已登录，没有则进入登录页
+        if (!GlobalConfig.isLogin(this)){
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+            return;
+        }
         // requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
         // 查找控件
         initView();
     }
+
 
 
 
@@ -65,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
         // 初始化底部标签页
         initTab();
     }
+
+
 
 
     private void initTab() {

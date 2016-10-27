@@ -5,5 +5,10 @@
     <item name="back" type="id">false</item>
     <item name="phonenumber" type="id">false</item>
     <item name="user_agreement" type="id">false</item>
+    <item name="et_username" type="id">false</item>
+    <item name="et_password" type="id">false</item>
+    <item name="bt_forgot_psw" type="id">false</item>
+    <item name="bt_login" type="id">false</item>
+    <item name="bt_register" type="id">false</item>
 
 </resources>
