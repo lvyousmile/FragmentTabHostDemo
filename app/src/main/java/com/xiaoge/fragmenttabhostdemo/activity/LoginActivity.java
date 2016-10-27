@@ -9,9 +9,16 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.xiaoge.fragmenttabhostdemo.MainActivity;
 import com.xiaoge.fragmenttabhostdemo.R;
+import com.xiaoge.fragmenttabhostdemo.bean.LoginBean;
+import com.xiaoge.fragmenttabhostdemo.utils.NetUrl;
+import com.zhy.http.okhttp.OkHttpUtils;
+import com.zhy.http.okhttp.callback.StringCallback;
 
 import java.util.HashMap;
+
+import okhttp3.Call;
 
 public class LoginActivity extends BaseActivity {
 
@@ -44,29 +51,6 @@ public class LoginActivity extends BaseActivity {
         bt_forgot_psw.setOnClickListener(this);
     }
 
-    @Override
-    protected void initCreate() {
-
-        gson = new Gson();
-    }
-
-    @Override
-    protected void initView() {
-
-    }
-
-
-    @Override
-    protected void initListener() {
-
-
-
-    }
-
-    @Override
-    protected void initData() {
-
-    }
 
     @Override
     protected void onInnerClick(View view) {
@@ -74,7 +58,8 @@ public class LoginActivity extends BaseActivity {
 
         switch (view.getId()) {
             case R.id.bt_login: // 登录
-                //loginUser();
+                loginUser();
+                //  startActivity(new Intent(mContext, MainActivity.class));
                 break;
             case R.id.bt_register: // 注册
                 startActivity(new Intent(getBaseContext(), RegisterActivity.class));
@@ -85,7 +70,7 @@ public class LoginActivity extends BaseActivity {
         }
 
     }
-/*
+
     private void loginUser() {
 
         username = et_username.getText().toString().trim();
@@ -109,6 +94,41 @@ public class LoginActivity extends BaseActivity {
         final HashMap<String, String> params = new HashMap<String, String>();
         params.put("username", username);
         params.put("password", password);
+
+        String url = NetUrl.BASE_URL + "/api/user/tlogin.html";
+
+        OkHttpUtils
+                .post()
+                .url(url)
+                .addParams("username", username)
+                .addParams("password", password)
+                .build()
+                .execute(new StringCallback() {
+
+                    @Override
+                    public void onError(Call call, Exception e, int id) {
+
+                        Toast.makeText(LoginActivity.this, "网络连接错误~~~", Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onResponse(String response, int id) {
+
+                        LoginBean loginbean = gson.fromJson(response, LoginBean.class);
+
+                        if (1 == loginbean.code) {
+                            Toast.makeText(LoginActivity.this, "用户名或密码错误", Toast.LENGTH_LONG).show();
+                            return;
+                        } else if (0 == loginbean.code) {
+                            startActivity(new Intent(mContext, MainActivity.class));
+                        }
+
+                        finish();
+                    }
+
+                });
+
+
     }
-    */
+
 }

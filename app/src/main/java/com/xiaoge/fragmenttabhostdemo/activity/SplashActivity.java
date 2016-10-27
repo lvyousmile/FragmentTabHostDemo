@@ -48,24 +48,5 @@ public class SplashActivity extends BaseActivity {
 		myAnimation_Alpha.startNow();         
 	}
 
-	@Override
-	protected void initCreate() {
-
-	}
-
-	@Override
-	protected void initView() {
-
-	}
-
-	@Override
-	protected void initListener() {
-
-	}
-
-	@Override
-	protected void initData() {
-
-	}
 
 }

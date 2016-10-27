@@ -3,14 +3,16 @@ package com.xiaoge.fragmenttabhostdemo.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.TextView;
 
 import com.xiaoge.fragmenttabhostdemo.R;
+import com.xiaoge.fragmenttabhostdemo.utils.GlobalConfig;
 
 
-public abstract class BaseActivity extends FragmentActivity implements View.OnClickListener{
+public class BaseActivity extends FragmentActivity implements View.OnClickListener {
     /**
      * Context
      */
@@ -24,11 +26,8 @@ public abstract class BaseActivity extends FragmentActivity implements View.OnCl
         mContext = this;
         tv_title = (TextView) findViewById(R.id.tv_title);
 
-        initCreate();
-        initView();
-        initListener();
-        initData();
     }
+
 
     //如果有header 直接绑定返回按钮点击事件
     public void backpressed(View view) {
@@ -59,46 +58,21 @@ public abstract class BaseActivity extends FragmentActivity implements View.OnCl
         overridePendingTransition(R.anim.default_fromright_in, R.anim.default_toleft_out);
     }
 
-    @Override
-    public void onClick(View v) {
 
-        switch (v.getId()) {
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
             case R.id.back: // 统一简单返回键处理
                 finish();
 
                 break;
 
+
             default: // 非统一处理onClick
-                onInnerClick(v);
+                onInnerClick(view);
+
         }
     }
 
-
-    /**
-     * 初始化配置
-     */
-    protected abstract void initCreate();
-
-    /**
-     * 初始化View
-     * 处理
-     */
-    protected abstract void initView();
-
-    /**
-     * 初始化监听器
-     */
-    protected abstract void initListener();
-
-    /**
-     * 初始化数据
-     */
-    protected abstract void initData();
-
-    /**
-     * 抽取处理 onClick 方法
-     * @param view    被点击的View
-     */
     protected void onInnerClick(View view) {}
-
 }

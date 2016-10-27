@@ -24,7 +24,7 @@ public class LoginBean implements Serializable{
 
     public DataBean data;
 
-    public static class DataBean {
+    public static class DataBean implements Serializable{
         public int id;
         public String name;
         public String password;

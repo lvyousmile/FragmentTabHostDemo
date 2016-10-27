@@ -9,7 +9,7 @@ public class NetUrl {
     /**
      * 服务器地址
      */
-    private static final String SERVER_ADDRESS= "http://192.168.18.190";
+    private static final String SERVER_ADDRESS= "http://192.168.30.7";
 
     /**
      * 服务器端口
@@ -24,6 +24,6 @@ public class NetUrl {
     /**
      * 项目·服务器URL
      */
-    public static final String BASE_URL = String.format("%s/%s", SERVER_HOST, "ECServicez8");
+    public static final String BASE_URL = String.format("%s/%s", SERVER_HOST, "/wom");
 
 }

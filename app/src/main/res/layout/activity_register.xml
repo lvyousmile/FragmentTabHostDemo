@@ -6,19 +6,22 @@
     android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@id/back"
         android:layout_width="match_parent"
         android:layout_height="@dimen/title_height"
         android:layout_marginLeft="@dimen/margin_left"
+        android:clickable="true"
         android:layout_marginTop="@dimen/name_margin_left">
 
         <ImageView
-            android:id="@id/back"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:src="@mipmap/back" />
 
         <TextView
+            android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -85,6 +88,8 @@
             android:layout_marginLeft="@dimen/name_margin_left"
             android:layout_marginTop="@dimen/name_margin_top"
             android:hint="@string/real_name"
+            android:layout_marginBottom="@dimen/name_margin_small"
+            android:background="@null"
             android:inputType="textEmailAddress" />
 
         <View
@@ -107,6 +112,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/butterfly"
                 android:hint="@string/input_phone"
+                android:layout_centerInParent="true"
+                android:background="@null"
                 android:inputType="textEmailAddress" />
 
             <Button
@@ -132,10 +139,12 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/name_margin_top"
             android:layout_below="@id/butterfly"
             android:layout_marginLeft="@dimen/name_margin_left"
             android:hint="@string/input_text"
+            android:layout_centerInParent="true"
+            android:background="@null"
             android:inputType="textEmailAddress" />
 
         <View
@@ -147,9 +156,11 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/name_margin_top"
             android:layout_below="@id/butterfly"
             android:layout_marginLeft="@dimen/name_margin_left"
+            android:layout_marginBottom="@dimen/text_small_margin"
+            android:background="@null"
             android:hint="@string/set_password"
             android:inputType="textEmailAddress" />
 

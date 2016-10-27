@@ -9,20 +9,32 @@
         android:layout_height="@dimen/title_height"
         android:background="@color/titlecolor">
 
-        <ImageView
+        <RelativeLayout
             android:id="@id/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:src="@mipmap/back" />
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/titlecolor"
+            android:clickable="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/margin_left"
-            android:text="@string/login"
-            android:textColor="@color/black" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/name_margin_small"
+                android:src="@mipmap/back" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/name_margin_left"
+                android:text="@string/login"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,6 +58,7 @@
             android:layout_below="@+id/butterfly"
             android:layout_marginLeft="@dimen/name_margin_left"
             android:layout_marginRight="@dimen/name_margin_left"
+
             android:layout_marginTop="@dimen/name_margin_top">
 
             <EditText
@@ -53,15 +66,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/butterfly"
-                android:hint="@string/find_password_phone"
-                android:inputType="textEmailAddress" />
+                android:layout_marginTop="@dimen/name_margin_small"
+                android:background="@null"
+                android:hint="@string/find_password_phone" />
 
             <Button
 
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/phone_text"
-                android:background="@color/darklogin"
                 android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/text_small_margin"
+                android:background="@color/darklogin"
                 android:text="@string/get_phone_text"
                 android:textColor="@color/white" />
 
@@ -77,11 +92,11 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/name_margin_top"
             android:layout_below="@id/butterfly"
             android:layout_marginLeft="@dimen/name_margin_left"
-            android:hint="@string/find_password_text"
-            android:inputType="textEmailAddress" />
+            android:background="@null"
+            android:hint="@string/find_password_text" />
 
         <View
             android:layout_width="match_parent"
@@ -90,8 +105,6 @@
             android:layout_marginRight="@dimen/name_margin_left"
             android:background="@color/black" />
     </LinearLayout>
-
-
 
 
     <Button

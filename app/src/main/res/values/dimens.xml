@@ -9,7 +9,7 @@
     <dimen name="tab_top_fontsize">15sp</dimen>
     <dimen name="image_bottom_size">100sp</dimen>
     <dimen name="text_top_size">250sp</dimen>
-    <dimen name="name_margin_top">40sp</dimen>
+    <dimen name="name_margin_top">40dp</dimen>
     <dimen name="name_margin_left">30dp</dimen>
     <dimen name="name_margin_small">10dp</dimen>
     <dimen name="button_top">80dp</dimen>
