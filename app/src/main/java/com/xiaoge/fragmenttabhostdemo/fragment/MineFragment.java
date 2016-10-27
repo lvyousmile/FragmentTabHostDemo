@@ -8,19 +8,37 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.xiaoge.fragmenttabhostdemo.R;
+
 /**
  * Created by Administrator on 2016/9/16 0016.
  */
-public class MineFragment extends Fragment {
+public class MineFragment extends BaseFragment {
+
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    protected int getLayoutId() {
+        return R.layout.fragment_mine;
+    }
 
-        TextView tv = new TextView(getActivity());
-        tv.setGravity(Gravity.CENTER);
-        tv.setTextSize(40);
-        tv.setText("这里是个人中心");
+    @Override
+    protected void initCreate() {
 
-        return tv;
+
+    }
+
+    @Override
+    protected void initView(View rootView) {
+
+    }
+
+    @Override
+    protected void initListener() {
+
+    }
+
+    @Override
+    protected void initData() {
+
     }
 }

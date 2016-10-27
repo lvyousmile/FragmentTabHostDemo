@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         //判断是否已登录，没有则进入登录页
-        if (!GlobalConfig.isLogin(this)){
-            startActivity(new Intent(this, LoginActivity.class));
-            finish();
-            return;
-        }
+//        if (!GlobalConfig.isLogin(this)){
+//            startActivity(new Intent(this, LoginActivity.class));
+//            finish();
+//            return;
+//        }
         // requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
@@ -71,7 +71,8 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         fl_content = (FrameLayout) findViewById(R.id.fl_content);
         mTabhost = (FragmentTabHost) findViewById(android.R.id.tabhost);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //toolbar = (Toolbar) findViewById(R.id.toolbar);
+      //  setSupportActionBar(toolbar);
         // 初始化底部标签页
         initTab();
     }

@@ -10,5 +10,9 @@
     <item name="bt_forgot_psw" type="id">false</item>
     <item name="bt_login" type="id">false</item>
     <item name="bt_register" type="id">false</item>
+    <item name="relTop" type="id">false</item>
+    <item name="my_image" type="id">false</item>
+    <item name="username" type="id">false</item>
+    <item name="my_service_icon" type="id">false</item>
 
 </resources>

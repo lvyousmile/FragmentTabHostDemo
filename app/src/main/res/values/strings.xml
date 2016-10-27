@@ -28,4 +28,11 @@
     <string name="register_hint1">如您已是“幸福绿城APP”用户</string>
     <string name="register_hint2">无需注册可返回直接登录</string>
     <string name="real_name">请输入真实姓名</string>
+    <string name="service_order">我的服务订单</string>
+    <string name="rob_house">我的认筹及抢房</string>
+    <string name="my_date">我的香亲汇</string>
+    <string name="my_grade">我的积分</string>
+    <string name="my_setting">我的设置</string>
+    <string name="grade">积分:</string>
+    <string name="grade_num">158</string>
 </resources>

@@ -360,6 +360,8 @@
     <color name="darklogin">#12234a</color>
     <color name="titlecolor">#fef4dc</color>
     <color name="light_yellow">#fff8e9</color>
+    <color name="light_yellow_title">#fcf3dc</color>
+    <color name="bg_corners">#ebebeb</color>
 
 
 </resources>
