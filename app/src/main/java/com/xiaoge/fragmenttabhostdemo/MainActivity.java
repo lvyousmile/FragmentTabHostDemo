@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         //判断是否已登录，没有则进入登录页
-//        if (!GlobalConfig.isLogin(this)){
-//            startActivity(new Intent(this, LoginActivity.class));
-//            finish();
-//            return;
-//        }
+        if (!GlobalConfig.isLogin(this)){
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+            return;
+        }
         // requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 

@@ -3,6 +3,7 @@ package com.xiaoge.fragmenttabhostdemo.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +21,9 @@ import java.util.HashMap;
 
 import okhttp3.Call;
 
+/**
+ * 登录页面
+ */
 public class LoginActivity extends BaseActivity {
 
     //登录名字和密码
@@ -30,7 +34,7 @@ public class LoginActivity extends BaseActivity {
     private Button bt_login;
     private Button bt_register;
 
-    private String username;
+    private String name;
     private String password;
     private Gson gson;
 
@@ -46,9 +50,12 @@ public class LoginActivity extends BaseActivity {
         bt_login = (Button) findViewById(R.id.bt_login);
         bt_register = (Button) findViewById(R.id.bt_register);
 
+        gson = new Gson();
+
         bt_login.setOnClickListener(this);
         bt_register.setOnClickListener(this);
         bt_forgot_psw.setOnClickListener(this);
+
     }
 
 
@@ -73,12 +80,12 @@ public class LoginActivity extends BaseActivity {
 
     private void loginUser() {
 
-        username = et_username.getText().toString().trim();
+        name = et_username.getText().toString().trim();
         Intent intent = new Intent();
-        intent.putExtra("username", username);
+        intent.putExtra("name", name);
         password = et_password.getText().toString().trim();
 
-        if (TextUtils.isEmpty(username)) {
+        if (TextUtils.isEmpty(name)) {
             Toast.makeText(getApplicationContext(), "用户名不能为空",
                     Toast.LENGTH_SHORT).show();
             return;
@@ -92,15 +99,17 @@ public class LoginActivity extends BaseActivity {
 
 
         final HashMap<String, String> params = new HashMap<String, String>();
-        params.put("username", username);
+        params.put("name", name);
         params.put("password", password);
 
         String url = NetUrl.BASE_URL + "/api/user/tlogin.html";
+//        String url = "www.baidu.com";
+
 
         OkHttpUtils
-                .post()
+                .get()
                 .url(url)
-                .addParams("username", username)
+                .addParams("name", name)
                 .addParams("password", password)
                 .build()
                 .execute(new StringCallback() {
@@ -113,13 +122,20 @@ public class LoginActivity extends BaseActivity {
 
                     @Override
                     public void onResponse(String response, int id) {
+                        Toast.makeText(LoginActivity.this, "网络连接成功~~~", Toast.LENGTH_LONG).show();
+                        Log.i("ly","登录成功");
 
                         LoginBean loginbean = gson.fromJson(response, LoginBean.class);
 
                         if (1 == loginbean.code) {
+                            Log.i("ly","密码错误");
+
                             Toast.makeText(LoginActivity.this, "用户名或密码错误", Toast.LENGTH_LONG).show();
+                            finish();
                             return;
                         } else if (0 == loginbean.code) {
+                            Log.i("ly","登录成功");
+                            Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_LONG).show();
                             startActivity(new Intent(mContext, MainActivity.class));
                         }
 

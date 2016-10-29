@@ -14,5 +14,7 @@
     <item name="my_image" type="id">false</item>
     <item name="username" type="id">false</item>
     <item name="my_service_icon" type="id">false</item>
+    <item name="my_name" type="id">false</item>
+    <item name="my_phone" type="id">false</item>
 
 </resources>

@@ -154,7 +154,7 @@
                 android:id="@id/my_service_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/my_suggest_has_pic" />
+                android:src="@mipmap/renchou" />
 
             <TextView
                 android:layout_width="wrap_content"

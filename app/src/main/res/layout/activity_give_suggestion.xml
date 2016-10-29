@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_give_suggestion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiaoge.fragmenttabhostdemo.activity.GiveSuggestionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/titlecolor">
+
+        <RelativeLayout
+            android:id="@id/back"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/titlecolor"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/name_margin_small"
+                android:src="@mipmap/back" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/name_margin_left"
+                android:text="@string/setting"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/give_suggestion"
+            android:textColor="@color/black"
+            android:textSize="@dimen/margin_left" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/name_margin_small"
+        android:layout_marginRight="@dimen/name_margin_small"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/back_margin_left"
+            android:hint="@string/advice"
+            android:textSize="@dimen/text_big_title_size" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tab_top_fontsize"
+            android:background="@color/darklogin"
+            android:text="@string/confirm_push"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

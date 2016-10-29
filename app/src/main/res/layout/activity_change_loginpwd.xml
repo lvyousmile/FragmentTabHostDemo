@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_loginpwd"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.xiaoge.fragmenttabhostdemo.activity.change_loginpwd">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,19 +28,22 @@
                 android:src="@mipmap/back" />
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="@dimen/name_margin_left"
-                android:text="@string/login"
+                android:text="@string/my_data"
                 android:textColor="@color/black" />
+
+
         </RelativeLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/find_password"
+            android:text="@string/change_loginpwd"
             android:textColor="@color/black"
             android:textSize="@dimen/margin_left" />
 
@@ -48,49 +55,15 @@
         android:background="@color/light_yellow"
         android:orientation="vertical">
 
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="@dimen/name_margin_top"
             android:layout_below="@id/butterfly"
-            android:layout_marginTop="@dimen/name_margin_small"
             android:layout_marginLeft="@dimen/name_margin_left"
             android:background="@null"
-            android:hint="@string/find_password_text" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_marginLeft="@dimen/name_margin_left"
-            android:layout_marginRight="@dimen/name_margin_left"
-            android:background="@color/black" />
+            android:hint="@string/old_pwd" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/butterfly"
-            android:layout_marginLeft="@dimen/name_margin_left"
-            android:layout_marginRight="@dimen/name_margin_left"
-            android:layout_marginTop="@dimen/name_margin_top">
-
-            <EditText
-                android:id="@id/phonenumber"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/butterfly"
-
-                android:background="@null"
-                android:hint="@string/find_password_phone" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/phone_text"
-                android:layout_alignParentRight="true"
-                android:layout_marginBottom="@dimen/text_small_margin"
-                android:background="@color/darklogin"
-                android:text="@string/get_phone_text"
-                android:textColor="@color/white" />
-
-        </RelativeLayout>
 
         <View
             android:layout_width="match_parent"
@@ -106,7 +79,22 @@
             android:layout_below="@id/butterfly"
             android:layout_marginLeft="@dimen/name_margin_left"
             android:background="@null"
-            android:hint="@string/find_password_text" />
+            android:hint="@string/new_pwd" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/name_margin_left"
+            android:layout_marginRight="@dimen/name_margin_left"
+            android:background="@color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/name_margin_top"
+            android:layout_below="@id/butterfly"
+            android:layout_marginLeft="@dimen/name_margin_left"
+            android:background="@null"
+            android:hint="@string/confirm_newpwd" />
 
         <View
             android:layout_width="match_parent"
@@ -123,9 +111,7 @@
         android:layout_marginLeft="@dimen/name_margin_left"
         android:layout_marginRight="@dimen/name_margin_left"
         android:layout_marginTop="@dimen/tab_top_fontsize"
-        android:background="@color/darklogin"
+        android:background="@color/title_blue"
         android:text="@string/confirm_push"
         android:textColor="@color/white" />
-
-
 </LinearLayout>

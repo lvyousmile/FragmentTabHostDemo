@@ -9,7 +9,7 @@ public class NetUrl {
     /**
      * 服务器地址
      */
-    private static final String SERVER_ADDRESS= "http://192.168.30.7";
+    private static final String SERVER_ADDRESS= "http://199.20.31.3";
 
     /**
      * 服务器端口
