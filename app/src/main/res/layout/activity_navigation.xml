@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiaoge.fragmenttabhostdemo.activity.NavigationAcitivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/titlecolor">
+
+        <RelativeLayout
+            android:id="@id/back"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/titlecolor"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/name_margin_small"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/name_margin_left"
+                android:text="@string/login"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/navigation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/margin_left" />
+
+    </RelativeLayout>
+
+    <com.amap.api.maps.mapview
+        android:id="@id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.amap.api.maps.mapview>
+</LinearLayout>

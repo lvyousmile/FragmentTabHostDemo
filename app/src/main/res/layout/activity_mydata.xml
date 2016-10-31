@@ -27,7 +27,6 @@
                 android:src="@mipmap/back" />
 
             <TextView
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -71,7 +70,7 @@
             android:layout_marginLeft="@dimen/name_margin_small"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/my_service_icon"
-            android:text="@string/rob_house"
+            android:text="@string/my_image"
             android:textColor="@color/black"
             android:textSize="16dp" />
 
@@ -99,6 +98,7 @@
         android:background="@color/bg_corners" />
 
     <RelativeLayout
+        android:id="@id/change_nickname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -146,6 +146,7 @@
         android:background="@color/bg_corners" />
 
     <RelativeLayout
+        android:id="@id/telphone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -193,6 +194,7 @@
         android:background="@color/bg_corners" />
 
     <RelativeLayout
+        android:id="@id/change_loginpwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -212,7 +214,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/name_margin_small"
             android:layout_toRightOf="@id/my_service_icon"
-            android:text="@string/change_pwd"
+            android:text="@string/change_loginpwd"
             android:textColor="@color/black"
             android:textSize="16dp" />
 

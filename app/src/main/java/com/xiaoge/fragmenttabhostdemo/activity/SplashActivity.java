@@ -19,7 +19,6 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.activity_splash);
         rl_homepage = (RelativeLayout) findViewById(R.id.rl_homepage);
         //根据各自的构造方法来初始化一个实例对象

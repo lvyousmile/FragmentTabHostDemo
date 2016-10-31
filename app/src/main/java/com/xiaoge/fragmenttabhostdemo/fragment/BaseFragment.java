@@ -61,9 +61,5 @@ public abstract class BaseFragment extends Fragment implements
      */
     protected abstract void initData();
 
-    @Override
-    public void onClick(View v) {
-
-    }
 
 }

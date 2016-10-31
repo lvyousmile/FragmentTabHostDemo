@@ -42,7 +42,7 @@ public class GuideActivity extends BaseActivity implements OnPageChangeListener 
 		viewPager = (ViewPager) findViewById(R.id.viewPager);
 
 		bt_enter.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(GuideActivity.this,MainActivity.class);
@@ -85,6 +85,7 @@ public class GuideActivity extends BaseActivity implements OnPageChangeListener 
 		viewPager.setCurrentItem(0);
 
 	}
+
 
 
 	/**

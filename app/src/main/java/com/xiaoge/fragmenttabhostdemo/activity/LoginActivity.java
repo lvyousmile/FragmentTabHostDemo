@@ -21,9 +21,6 @@ import java.util.HashMap;
 
 import okhttp3.Call;
 
-/**
- * 登录页面
- */
 public class LoginActivity extends BaseActivity {
 
     //登录名字和密码
@@ -57,6 +54,7 @@ public class LoginActivity extends BaseActivity {
         bt_forgot_psw.setOnClickListener(this);
 
     }
+
 
 
     @Override

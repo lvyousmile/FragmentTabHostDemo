@@ -59,10 +59,13 @@
     <string name="change_nickname">修改昵称</string>
     <string name="my_data">我的资料</string>
     <string name="app_version">版本号：1.1</string>
+    <string name="greentown_liuxiang">绿城留香园</string>
     <string name="instant_app">扫描二维码，直接安装留香生活-app</string>
     <string name="instant_app_throughqq">微信、QQ和短信发送链接邀请进行安装</string>
     <string name="grade">积分:</string>
+    <string name="my_image">头像</string>
     <string name="message">消息</string>
+    <string name="navigation">导航</string>
     <string name="nickname_hint">为保护个人隐私，在与邻居交互时将显示昵称，默认为真实姓名，您可以自行修改</string>
     <string name="grade_num">158</string>
 </resources>

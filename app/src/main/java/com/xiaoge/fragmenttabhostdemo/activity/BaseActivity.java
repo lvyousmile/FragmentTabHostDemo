@@ -12,7 +12,7 @@ import com.xiaoge.fragmenttabhostdemo.R;
 import com.xiaoge.fragmenttabhostdemo.utils.GlobalConfig;
 
 
-public class BaseActivity extends FragmentActivity implements View.OnClickListener {
+public  class BaseActivity extends FragmentActivity implements View.OnClickListener {
     /**
      * Context
      */

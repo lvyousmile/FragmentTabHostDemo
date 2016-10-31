@@ -16,5 +16,16 @@
     <item name="my_service_icon" type="id">false</item>
     <item name="my_name" type="id">false</item>
     <item name="my_phone" type="id">false</item>
+    <item name="butterfly" type="id">false</item>
+    <item name="fragment_greengarden" type="id">false</item>
+    <item name="navi_view" type="id">false</item>
+    <item name="map" type="id">false</item>
+    <item name="mydata" type="id">false</item>
+    <item name="change_nickname" type="id">false</item>
+    <item name="telphone" type="id">false</item>
+    <item name="change_loginpwd" type="id">false</item>
+    <item name="my_service_orders" type="id">false</item>
+    <item name="mysetting" type="id">false</item>
+    <item name="navigation" type="id">false</item>
 
 </resources>

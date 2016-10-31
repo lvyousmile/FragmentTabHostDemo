@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.xiaoge.fragmenttabhostdemo.activity.change_loginpwd">
+    tools:context="com.xiaoge.fragmenttabhostdemo.activity.ChangeLoginpwdActivity">
 
 
     <RelativeLayout
