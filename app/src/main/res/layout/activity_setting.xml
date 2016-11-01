@@ -79,6 +79,7 @@
         android:background="@color/bg_corners" />
 
     <RelativeLayout
+        android:id="@id/advice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_left"
@@ -108,7 +109,7 @@
         android:background="@color/bg_corners" />
 
     <RelativeLayout
-        android:id="@+id/rl_account_center"
+        android:id="@id/update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -147,6 +148,7 @@
         android:background="@color/bg_corners" />
 
     <RelativeLayout
+        android:id="@id/family"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -175,6 +177,7 @@
         android:background="@color/bg_corners" />
 
     <RelativeLayout
+        android:id="@id/help"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -203,6 +206,7 @@
         android:background="@color/bg_corners" />
 
     <RelativeLayout
+        android:id="@id/about_savelife"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"

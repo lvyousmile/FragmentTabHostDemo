@@ -146,7 +146,7 @@
         android:background="@color/bg_corners" />
 
     <RelativeLayout
-        android:id="@id/telphone"
+        android:id="@id/change_Telphone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -232,6 +232,7 @@
 
 
     <Button
+        android:id="@id/quit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/tab_top_fontsize"

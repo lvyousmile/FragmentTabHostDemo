@@ -24,7 +24,7 @@ public class SplashActivity extends BaseActivity {
         //根据各自的构造方法来初始化一个实例对象
         myAnimation_Alpha = new AlphaAnimation(0.3f, 1.0f);
         rl_homepage.setAnimation(myAnimation_Alpha);
-        myAnimation_Alpha.setDuration(3000);
+//        myAnimation_Alpha.setDuration(3000);
         myAnimation_Alpha.setAnimationListener(new AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {

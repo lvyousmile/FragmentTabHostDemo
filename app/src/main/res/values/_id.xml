@@ -24,6 +24,15 @@
     <item name="change_nickname" type="id">false</item>
     <item name="telphone" type="id">false</item>
     <item name="change_loginpwd" type="id">false</item>
+    <item name="submit" type="id">false</item>
+    <item name="getText" type="id">false</item>
+    <item name="change_Telphone" type="id">false</item>
+    <item name="quit" type="id">false</item>
+    <item name="about_savelife" type="id">false</item>
+    <item name="help" type="id">false</item>
+    <item name="family" type="id">false</item>
+    <item name="update" type="id">false</item>
+    <item name="advice" type="id">false</item>
     <item name="my_service_orders" type="id">false</item>
     <item name="mysetting" type="id">false</item>
     <item name="navigation" type="id">false</item>
