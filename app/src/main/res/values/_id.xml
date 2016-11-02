@@ -33,6 +33,8 @@
     <item name="family" type="id">false</item>
     <item name="update" type="id">false</item>
     <item name="advice" type="id">false</item>
+    <item name="indicator" type="id">false</item>
+    <item name="pager" type="id">false</item>
     <item name="my_service_orders" type="id">false</item>
     <item name="mysetting" type="id">false</item>
     <item name="navigation" type="id">false</item>
